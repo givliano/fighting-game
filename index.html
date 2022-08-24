@@ -1,50 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-    </style>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+  </style>
 </head>
+
 <body>
-    <!-- red container -->
-    <div style="position: relative; display: inline-block">
-        <!-- smaller red container -->
-        <div
-            style="
+  <!-- red container -->
+  <div style="position: relative; display: inline-block">
+    <!-- smaller red container -->
+    <div style="
                 position: absolute;
                 display: flex;
                 width: 100%;
                 align-items: center;
                 padding: 20px;
-            "
-        >
-            <!-- player health -->
-            <div style="position: relative; width: 100%; height: 30px; display: flex; justify-content: flex-end;">
-                <div style="background-color: yellow; width: 100%; height: 30px;"></div>
-                <div
-                    id="player-health"
-                    style="
+            ">
+      <!-- player health -->
+      <div style="position: relative; width: 100%; height: 30px; display: flex; justify-content: flex-end;">
+        <div style="background-color: yellow; width: 100%; height: 30px;"></div>
+        <div id="player-health" style="
                         position: absolute;
                         background: blue;
                         top: 0;
                         right: 0;
                         bottom: 0;
                         width: 100%;
-                    "
-                ></div>
-            </div>
+                    "></div>
+      </div>
 
-            <!--  timer -->
-            <div
-                id="timer"
-                style="
+      <!--  timer -->
+      <div id="timer" style="
                     background-color: red;
                     width: 100px;
                     height: 100px;
@@ -54,17 +50,16 @@
                     justify-content: center;
             "></div>
 
-            <!-- enemy health -->
-            <div style="position: relative; width: 100%; height: 30px;">
-                <div style="background-color: yellow; height: 30px;"></div>
-                <div id="enemy-health" style="position: absolute; background: blue; top: 0; right: 0; bottom: 0; left: 0;"></div>
-            </div>
+      <!-- enemy health -->
+      <div style="position: relative; width: 100%; height: 30px;">
+        <div style="background-color: yellow; height: 30px;"></div>
+        <div id="enemy-health" style="position: absolute; background: blue; top: 0; right: 0; bottom: 0; left: 0;">
         </div>
+      </div>
+    </div>
 
-        <!-- text -->
-        <div
-            id="display-text"
-            style="
+    <!-- text -->
+    <div id="display-text" style="
                 position: absolute;
                 color: #fff;
                 align-items: center;
@@ -72,11 +67,10 @@
                 width: 100%;
                 height: 100%;
                 display: none;
-            "
-        ></div>
+            "></div>
 
-        <canvas></canvas>
-    </div>
+    <canvas></canvas>
+  </div>
 </body>
 <script src="js/utils.js"></script>
 <script src="js/classes.js"></script>
