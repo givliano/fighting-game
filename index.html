@@ -24,35 +24,37 @@
   <div style="position: relative; display: inline-block">
     <!-- smaller red container -->
     <div style="
-                position: absolute;
-                display: flex;
-                width: 100%;
-                align-items: center;
-                padding: 20px;
-            ">
+      position: absolute;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      padding: 20px;
+    ">
       <!-- player health -->
       <div style="position: relative; width: 100%; height: 30px; display: flex; justify-content: flex-end;">
         <div style="background-color: yellow; width: 100%; height: 30px;"></div>
         <div id="player-health" style="
-                        position: absolute;
-                        background: blue;
-                        top: 0;
-                        right: 0;
-                        bottom: 0;
-                        width: 100%;
-                    "></div>
+          position: absolute;
+          background: #818cf8;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+        "></div>
       </div>
 
       <!--  timer -->
       <div id="timer" style="
-                    background-color: red;
-                    width: 100px;
-                    height: 100px;
-                    flex-shrink: 0;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-            "></div>
+        color: #eee;
+        background-color: black;
+        width: 100px;
+        height: 50px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 4px solid white;
+      "></div>
 
       <!-- enemy health -->
       <div style="position: relative; width: 100%; height: 30px;">
@@ -63,15 +65,17 @@
     </div>
 
     <!-- text -->
-    <div id="display-text" style="
-                position: absolute;
-                color: #fff;
-                align-items: center;
-                justify-content: center;
-                width: 100%;
-                height: 100%;
-                display: none;
-            "></div>
+    <div
+      id="display-text"
+      style="
+        position: absolute;
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        display: none;
+    "></div>
 
     <canvas></canvas>
   </div>
