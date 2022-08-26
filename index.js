@@ -104,14 +104,15 @@ function animate() {
   // detect for colision
   if (rectCollision(player, enemy) && player.isAttacking) { // attackBox position starts from the top left pixel in the player
     player.isAttacking = false;
-    enemy.health -= 20;
-    document.getElementById('enemy-health').style.width = enemy.health + '%';
   }
 
   if (rectCollision(enemy, player) && enemy.isAttacking) {
     enemy.isAttacking = false;
-    player.health -= 20;
-    document.getElementById('player-health').style.width = player.health + '%';
+    gsap.to('#player-health', {
+      width: player.health + '%'
+    });
+  }
+
   }
 
   // end game based on health
